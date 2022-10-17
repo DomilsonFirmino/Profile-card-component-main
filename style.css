@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+
+    --fs-regular: 14px;
+    --fs-medium: 18px;
+    --fs-big: 24px;
+
+    --ff: 'Kumbh Sans', sans-serif;
+    --fw-400: 400;
+    --fw--700: 700;
+
+    --clr-dark-gray: hsl(0 0% 59%);
+    --clr-dark-gb: hsl(227 10% 46%);
+    --clr-very-dark-db: hsl(229 23% 23%);
+    --clr-dark-cyan: hsl(185 75% 39%);
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--clr-dark-cyan);
+    font-family: var(--ff);
+    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -100px -50%, 150px 115%;
+    background-size: 115%, 115%;
+}
+
+@media only screen and (min-width: 475px) {
+    body{
+        background-origin: border-box;
+        background-position: -130% 140%,bottom 165% right -100%;
+        background-size: 77.5%, 77.5%;
+    }
+}
+main{
+    -webkit-box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.23); 
+box-shadow: 0px 0px 11px 5px rgba(0,0,0,0.23);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+}
+.image{
+    position: relative;
+    z-index: 99;
+    padding-top: 6rem;
+    margin-bottom: 1rem;
+}
+.image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 26%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('images/bg-pattern-card.svg');
+    mix-blend-mode: darken;
+}
+.ppic{
+    display: inline-block;
+    border-radius: 50%;
+    padding: .4em;
+    background-color: white;
+    object-fit: cover;
+}
+header .name{
+    color: var(--clr-very-dark-db);
+    font-weight: var(--fw--700);
+    margin-bottom: 2.5em;
+}
+.name h1{
+    margin-bottom: .3em;
+    color: var(--clr-very-dark-db);
+    font-weight: var(--fw--700);
+    font-size: var(--fs-big);
+}
+
+span{
+    font-weight: var(--fw-400);
+}
+
+.name p{
+    font-weight: var(--fw-400);
+    font-size: var(--fs-medium);
+}
+.info{
+    border-top: 2px solid hsl(0 0% 59% /.4);
+    display: flex;
+    justify-content: space-between;
+    padding:2rem;
+}
+p, span{
+    color:var(--clr-dark-gb);
+}
+section h1{
+    color: var(--clr-very-dark-db);
+    font-size: var(--fs-big);
+    margin-bottom: .1em;
+}
+section p{
+    font-size: var(--fs-medium);
+    color: var(--clr-dark-gray);
+}
