@@ -11,7 +11,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [3 Column preview cards](https://domilsonfirmino.github.io/3-column-preview-card/)
+- Live Site URL: [Profile card component challenge on Frontend Mentor](https://domilsonfirmino.github.io/Profile-card-component-main/)
 
 #### Built with
 
